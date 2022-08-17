@@ -1,0 +1,64 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // height: 100vh;
+  .topButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .homeBtn {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  .personalInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    .picture {
+      img {
+        width: 20vw;
+        height: auto;
+        border-radius: 50vw;
+        border: 0.3vw solid #000;
+      }
+    }
+    .name {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      font-family: "Montserrat";
+    }
+    .tagline {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      color: #ffff;
+      font-family: "Montserrat";
+    }
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    img {
+      height: 50px;
+    }
+  }
+  .linkedInLink {
+    button {
+      width: 40px;
+      height: 30px;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@mixin infoTile($width) {
+  background: #0a0d14;
+  border: 0.5px solid #8f8f8f6e;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  padding: 5px 15px 20px 15px;
+  transition: all 0.2s ease-in-out;
+  width: $width;
+  height: 10vw;
+  @media screen and (max-width: 640px) {
+    height: auto;
+    width: 300px;
+  }
+
+  .title {
+    margin-bottom: 0px;
+    color: #ffff;
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: "Montserrat";
+    }
+  }
+  .content {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: #ffff;
+  }
+}
+.projectsPage {
+  display: flex;
+  flex-direction: column;
+  .title {
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      font-family: "Montserrat";
+      color: #ffff;
+    }
+  }
+  .projectSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+    .project {
+      @include infoTile(85vw);
+    }
+  }
+}
