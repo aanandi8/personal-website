@@ -1,5 +1,5 @@
 @mixin infoTile($width) {
-  background: #0a0d14;
+  background: #1a1a1a;
   border: 0.5px solid #8f8f8f6e;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
@@ -12,13 +12,16 @@
   justify-content: space-between;
   align-items: center;
   @media screen and (max-width: 640px) {
-    height: auto;
-    width: 300px;
+    height: 180px;
+    width: 70vw;
   }
   .work_image {
     justify-content: center;
     img {
       justify-content: center;
+      @media screen and (max-width: 640px) {
+        height: 20px;
+      }
     }
   }
   .title {
@@ -28,6 +31,9 @@
       font-size: 32px;
       font-weight: 500;
       font-family: "Montserrat";
+      @media screen and (max-width: 640px) {
+        font-size: 24px;
+      }
     }
   }
   .content {
@@ -35,6 +41,9 @@
     font-weight: 400;
     font-family: "Montserrat";
     color: #ffff;
+    @media screen and (max-width: 640px) {
+      font-size: 12px;
+    }
   }
 }
 .workPage {
@@ -60,16 +69,30 @@
       @include infoTile(85vw);
       cursor: pointer;
     }
+    .econommi:hover {
+      background-color: #3b3b3b;
+    }
+    .econommi:active {
+      background-color: #3b3b3b;
+      transform: scale(0.8);
+      transition-duration: 0.5s;
+    }
   }
 }
 .hive_image {
   img {
     height: 150px;
+    @media screen and (max-width: 640px) {
+      height: 50px;
+    }
   }
 }
 .mcl_image {
   img {
     height: 150px;
+    @media screen and (max-width: 640px) {
+      height: 50px;
+    }
   }
 }
 .workPopUp {
@@ -85,7 +108,15 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    height: 40vh;
+    top: 30vh;
+  }
 
+  @media screen and (max-width: 640px) {
+    height: 30vh;
+    top: 30vh;
+  }
   button {
     font-size: 2vw;
     align-self: flex-end;
@@ -95,6 +126,7 @@
     border: unset;
     cursor: pointer;
   }
+
   .popUp-content {
     display: flex;
     flex-direction: column;
@@ -104,6 +136,12 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: flex-start;
+      img {
+        @media screen and (max-width: 640px) {
+          height: 30px;
+          width: 100px;
+        }
+      }
     }
 
     .introContent {
@@ -165,8 +203,9 @@
     #000
   );
 }
-// .active {
-//   // filter: blur(20px);
-//   // pointer-events: none;
-//   // user-select: none;
-// }
+
+.active {
+  filter: blur(20px);
+  // pointer-events: none;
+  user-select: none;
+}

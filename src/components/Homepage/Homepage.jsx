@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import "./Homepage.scss";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 
 import "@fontsource/montserrat";
 import Navbar from "../../components/Navbar/Navbar";
@@ -10,6 +15,9 @@ import gmailLogo from "../../assets/pictures/gmail.png";
 import wordpressLogo from "../../assets/pictures/wordpress.png";
 import Background from "../../assets/pictures/Background.png";
 import Marathon from "../../assets/pictures/Marathon.png";
+import Bungee from "../../assets/pictures/Bungee.png";
+import Picture4 from "../../assets/pictures/Picture4.png";
+import Hike from "../../assets/Hike.png";
 function Homepage() {
   const openLinkedIn = () => {
     window.open("https://www.linkedin.com/in/aanandi-sidharth");
@@ -29,7 +37,24 @@ function Homepage() {
     <div className="homepage">
       <div className="personalInfo">
         <div className="picture">
-          <img src={headshot} alt="" />
+          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <SwiperSlide>
+              <img src={headshot} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Marathon} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Bungee} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Picture4} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Hike} alt="" />
+            </SwiperSlide>
+          </Swiper>
+          {/* <img src={headshot} alt="" /> */}
         </div>
         <div className="name">Aanandi Sidharth</div>
         <div className="tagline">

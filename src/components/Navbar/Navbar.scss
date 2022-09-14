@@ -41,6 +41,8 @@ body {
 }
 .nav li:active {
   background-color: #555;
+  filter: blur(0px) !important;
+  visibility: visible;
 }
 .nav li:hover {
   background-color: #777;
