@@ -20,10 +20,11 @@
     img {
       justify-content: center;
       @media screen and (max-width: 640px) {
-        height: 20px;
+        height: 80px;
       }
     }
   }
+
   .title {
     margin-bottom: 0px;
     color: #ffff;
@@ -31,8 +32,9 @@
       font-size: 32px;
       font-weight: 500;
       font-family: "Montserrat";
+
       @media screen and (max-width: 640px) {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
@@ -41,8 +43,11 @@
     font-weight: 400;
     font-family: "Montserrat";
     color: #ffff;
+    @media screen and (max-width: 1024px) {
+      margin-top: -15px;
+    }
     @media screen and (max-width: 640px) {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 }
@@ -92,6 +97,14 @@
     height: 150px;
     @media screen and (max-width: 640px) {
       height: 50px;
+    }
+  }
+}
+.econommi_image {
+  img {
+    @media screen and (max-width: 640px) {
+      height: 20px;
+      width: 90px;
     }
   }
 }

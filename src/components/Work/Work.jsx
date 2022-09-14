@@ -68,7 +68,7 @@ const Work = (props) => {
         <div className="workSection">
           <div>
             <button className="econommi" onClick={openPopUp}>
-              <div className="work_image">
+              <div className="econommi_image">
                 <img src={econommiLogo} alt="" />
               </div>
               <div className="work_info">
