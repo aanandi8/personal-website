@@ -27,6 +27,14 @@
         width: 20vw;
         height: auto;
         border-radius: 50vw;
+        @media screen and (max-width: 1024px) {
+          height: 25vh;
+          width: 30vw;
+        }
+        @media screen and (max-width: 640px) {
+          height: 30vh;
+          width: 40vw;
+        }
       }
     }
     .name {
@@ -34,6 +42,12 @@
       font-style: normal;
       font-weight: 600;
       font-family: "Montserrat";
+      @media screen and (max-width: 1024px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: 640px) {
+        font-size: 24px;
+      }
     }
     .tagline {
       font-size: 24px;
@@ -41,6 +55,12 @@
       font-weight: 400;
       color: #ffff;
       font-family: "Montserrat";
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 640px) {
+        font-size: 12px;
+      }
     }
   }
   .links {
